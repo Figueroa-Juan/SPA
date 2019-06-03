@@ -1,0 +1,24 @@
+<?php
+$ancho=120;
+$alto=36;
+$imagen=ImageCreate($ancho,$alto);
+$amarillo=ImageColorAllocate($imagen,179,190,255);
+ImageFill($imagen,0,0,$amarillo);
+$rojo=ImageColorAllocate($imagen,255,0,0);
+$valoraleatorio=rand(100000,999999);
+SESSION_START();
+$_SESSION['numeroaleatorio']=$valoraleatorio;
+ImageString($imagen,5,25,5,$valoraleatorio,$rojo);
+for($c=0;$c<=5;$c++)
+{
+	$x1=rand(0,$ancho);
+	$y1=rand(0,$alto);
+	$x2=rand(0,$ancho);
+	$y2=rand(0,$alto);
+	ImageLine($imagen,$x1,$y1,$x2,$y2,$rojo);
+}
+header("content-type: image/jpeg");
+ImageJPEG($imagen);
+ImageDestroy($imagen);
+exit();
+?>

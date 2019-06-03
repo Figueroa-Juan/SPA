@@ -1,0 +1,265 @@
+* {
+				margin:0px;
+				padding:0px;
+				margin-left: 0;
+				margin-right: 0;
+			}
+			
+			#header {
+				background-color: rgba(25,50,50,0.8);
+				text-align: center;
+				width: 100%;
+				padding: 0;
+				margin: 0;
+				height: 80px;
+				position: relative;
+				font-family: Century;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				color:#fff;
+				text-decoration:none;
+				padding:28px 12px;
+				font-size: 15pt;
+				display:block;
+			}
+
+			.nav li a:hover {
+				background-color:rgba(255,120,0,0.5);
+			}
+			
+			.nav li ul {
+				background-color: rgba(25,50,50,0.8);
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			.contenedor {
+					width: 100%;
+					max-width:100%;
+					margin:auto;
+			}
+
+			.bloque{
+				background-color: rgb(25,50,50);
+				padding: 30px;
+				padding-right: 30px;
+			}
+			.bloque2{
+				background-color: white;
+			}
+			.fondo{
+				background-image: url("fondo.jpg");
+				background-attachment: fixed;
+				background-repeat: no-repeat;
+			}
+			footer{
+					background:rgba(25,50,50, 0.9);
+					padding:20px;
+					margin:20px 0;
+					color:#fff;
+					font-size: 16pt;
+					font-family: century;
+					box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+			}
+ 
+					article { 
+					background:rgba(25,50,50, 0.9);
+					padding:20px;
+					margin:20px 0;
+					color:#fff;
+					font-size: 16pt;
+					font-family: century;
+					box-shadow:0 5px 5px 3px rgba(0, 0, 0, 0.25);
+			}
+ 
+					/*article h2 {
+						color:#fff;
+						margin-left: 40pt;*/
+			}
+ 
+					article hr {
+						background:rgba(255,255,255,1);
+						height:3px;
+						border:none;
+			}
+ 
+					article p {
+						line-height: 25px;
+			}
+ 
+					article h2, article p, article hr {
+						margin-bottom: 20px;
+			}
+
+			.bloque2, h1{
+				color: black; 
+			}
+
+			.social { 
+				top: 200px; 
+				z-index: 2000; 
+			}
+ 
+			.social div {
+				list-style: none;
+			}
+ 
+			.social div a {
+				display: inline-block;
+				color:#fff;
+				background: #000;
+				padding: 10px 5px;
+				text-decoration: none;
+		-webkit-transition:all 500ms ease;
+		-o-transition:all 500ms ease;
+		transition:all 500ms ease; /* Establecemos una transición a todas las propiedades */
+			}
+ 
+			.social div .icon-facebook {background:#3b5998;} /* Establecemos los colores de cada red social, aprovechando su class */
+			.social div .icon-twitter {background: #00abf0;}
+			.social div .icon-instagram {background: #792053;}
+ 
+			.social  div a:hover {
+				background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+				padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+			}	
+header {
+    width: 100%;
+    overflow: hidden;
+    height: 100px;
+    position: relative;
+}
+
+nav {
+    top:-20px;
+    position: absolute;
+    left:0;
+    right:0;
+	margin:20px auto;
+	max-width:1000px;
+	width:90%;
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav > ul {
+	display:table;
+	/*Quitamos el overflow hidden que estaba aqui*/
+	width:100%;
+	background: #000;
+	position:relative;
+}
+
+nav > ul li {
+	display:table-cell;
+}
+
+/*Sub-menu*/
+nav > ul > li:hover > ul {
+	display:block;
+	height:100%;
+}
+
+nav > ul > li > ul {
+	display:block;
+	position:absolute;
+	background: #000;
+	left:0;
+	right:0;
+	overflow:hidden;
+	height:0%;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul li a {
+	color:#fff;
+	display:block;
+	line-height:20px;
+	padding:20px;
+	position: relative;
+	text-align:center;
+	text-decoration:none;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > ul > li a:hover {
+	background:#5da5a2;
+}
+
+nav > ul > li > a span {
+	background:#174459;
+	display:block;
+	height:100%;
+	width:100%;
+	left:0;
+	position:absolute;
+	top:-55px;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+	display:block;
+	line-height:60px;
+}
+
+nav > ul > li > a:hover > span {
+	top:0;
+}
+
+/*Colores*/
+nav ul li a .primero {
+	background:#0e5061;
+}
+
+nav ul li a .segundo {
+	background:#5da5a2;
+}
+
+nav ul li a .tercero {
+	background:#f25724;
+}
+
+nav ul li a .cuarto {
+	background:#174459;
+}
+
+nav ul li a .quinto {
+	background:#37a4d9;
+}
+ 
